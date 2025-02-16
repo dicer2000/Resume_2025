@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Maui Life</title>
+    <title>Brett Huffman</title>
 
     <link
     rel="stylesheet"
@@ -44,42 +44,152 @@
       <div class="row">
         <!-- Left Column - Profile Card -->
         <div class="col-md-4 d-flex justify-content-center">
-          <div id="card-img" class="card">
-            <img
-              src="https://resources.finalsite.net/images/f_auto,q_auto,t_image_size_2/v1693764908/principiacollegeedu/p22gmbzarvkdunm2cqav/huffman.jpg"
-              class="card-img-top"
-              alt="Profile Picture"
-            />
+          <div class="card card-img">
+            <img src="./img/huffman.jpg" alt="...">
+            <div class="card-body text-center">
+              <a href="#" alt="" class="btn btn-secondary me-2 category-btn" data-bs-toggle="collapse" data-bs-target="#contact-content" role="button">Contact Me</a>
+              <p class="card-text"></p>
+            </div>
           </div>
         </div>
 
         <!-- Right Column - Bootstrap Carousel -->
         <div class="col-md-8">
-          <!-- Buttons to Navigate Carousel -->
-          <div class="text-left mb-3">
+          <!-- Main title area -->
+          <div id="main" class="text-left mb-3">
 
             <h3 class="text-center mb-3">Brett Huffman</h3>
-            <h5 class="text-center mb-3">High Impact Software Design & Development</h5>
-            <p>
-              Passionate about entrepreneurship, technology, and tinkering
-              with old cars <i class="fas fa-circle small_dot"></i> Preparing students for high-impact careers <i class="fas fa-circle small_dot"></i> PhD
-              Candidate
-            </p>
-            <div class="text-center mt-4">
-            <button class="btn btn-light me-2">
-              Leadership
-            </button>
-            <button class="btn btn-light me-2">
-              Digital Life
-            </button>
-            <button class="btn btn-light me-2">
-              Analog Life
-            </button>
-            <a class="btn btn-light me-2" href="https://github.com/dicer2000"><i class="fab fa-github"></i> Github</a>
-            <a class="btn btn-light me-2" href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
-          </div>
-          </div>
+            <h5 class="text-center mb-3">High Impact Software Design, Development and Teaching</h5>
+            <div id="button-group" class="text-center mt-4">
+              <p>
+                I am passionate about entrepreneurship, technology, and working on
+                old cars.  I try to give back to the development community
+                by teaching students software development. If that's not enough,
+                I am also a PhD Candidate.
+              </p>
+              <div id="button-group" class="text-center mt-4">
+
+                <a href="#" alt="" class="btn btn-light me-2 category-btn" data-bs-toggle="collapse" data-bs-target="#leadership-content" role="button">Leadership</a>
+                <a href="#" alt="" class="btn btn-light me-2 category-btn" data-bs-toggle="collapse" data-bs-target="#digital-content" role="button">Digital Life</a>
+                <a href="#" alt="" class="btn btn-light me-2 category-btn" data-bs-toggle="collapse" data-bs-target="#analog-content" role="button">Analog Life</a>
+                <a class="btn btn-light me-2" target="_blank" href="https://github.com/dicer2000" role="button"><i class="fab fa-github"></i> Github</a>
+                <a class="btn btn-light me-2" target="_blank" href="https://www.linkedin.com/in/bretthuffman/" role="button"><i class="fab fa-linkedin"></i> LinkedIn</a>
+              </div>
+    
+              <!-- Category Content Sections (Bootstrap Collapse) -->
+              <div id="leadership-content" class="collapse category-content pb-4">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h2 class="mb-0">Leadership</h2>
+                  <button class="close-btn btn btn-sm btn-light" data-bs-toggle="collapse" data-bs-target="#leadership-content">
+                    &times;
+                  </button>
+                </div>
+                <hr>
+                <p>Throughout my career I've always gravitated to helping lead teams achieve great things.</p>
+                <p>In the Navy I started at the very lowest enlisted rank and worked my way up to an officer. I found myself responsible for helping to build flight tracking software responsible for many thousands of people.</p>
+                <p>More recently, I have started several software companies, including Summertime Software, Inc and StarterData, Inc. Both companies were focused on Real Estate-related software. I love finding new ways to help solve complex tasks in Real Estate.</p>
+                <p>I have also been the Chief Technology Officer and Product Manager for Ticor Title and then ServiceLink. During that time I helped to build a large-scale deployment of new in-house systems and to implement many cost-saving measures.</p>
+              </div>
+    
+              <div id="digital-content" class="collapse category-content pb-4">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h2 class="mb-0">Digital Life</h2>
+                  <button class="close-btn btn btn-sm btn-light" data-bs-toggle="collapse" data-bs-target="#digital-content">
+                    &times;
+                  </button>
+                </div>
+                <hr>
+                <p>My mom bought me my first computer when I was nine.  From the moment I saw the screen for the first time, I wanted
+                  to know how it worked.  I dove into the world of Assembly, sprites and complex logic.  I couldn't believe everyone wasn't into doing it!
+                </p>
+                <p>In college I found out how much I didn't already know.  Computing is an enormous field and one could spend a lifetime trying to explore it all.  I went to USC (Undergrad), Texas A&M (Masters) and am currently a Doctorial student at University of Missouri, St Louis.</p>
+                <p>My technical expertise involves:
+                  <ul>
+                  <li>SQL - Database design, optimization, and query performance tuning</li>
+                  <li>C# & .NET - Enterprise-level applications, APIs, and back-end development</li>
+                    <li>Node.js - Scalable server-side solutions and microservices</li>
+                      <li>C++ - High-performance computing and system-level programming</li>
+                        <li>JavaScript - Interactive web applications and full-stack development</li>
+                        <li>And much more</li>
+                      </ul>
+                </p>
+                <p>Tell me about your digital life. I'm always excited to hear other's explorations.</p>
+              </div>
+    
+              <div id="analog-content" class="collapse category-content pb-4">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h2 class="mb-0">Analog Life</h2>
+                  <button class="close-btn btn btn-sm btn-light" data-bs-toggle="collapse" data-bs-target="#analog-content">
+                    &times;
+                  </button>
+                </div>
+                <hr>
+                <p>With so much time being spent working in the digital world, I found I needed more "tangible experiences."  On my off time I enjoy working on old cars, golfing and running.</p>
+              </div>
+
+
+              <div id="contact-content" class="collapse category-content pb-4">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h2 class="mb-0">Contact Me</h2>
+                  <button class="close-btn btn btn-sm btn-light" data-bs-toggle="collapse" data-bs-target="#contact-content">
+                    &times;
+                  </button>
+                </div>
+                <hr>
+                <form id="my-form" action="https://formspree.io/f/xjkgpboz" method="POST">
+                  <div class="mb-3">
+                    <label for="name" class="form-label">Your Name</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Your Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="message" class="form-label">Your Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Send Message</button>
+                  <div id="my-form-status" class="alert alert-info mt-4 invisible" role="alert">
+                    Thank you.  I look forward to speaking with you!
+                  </div>
+                </form>
+              </div>
         </div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+      <!-- Turtle Description -->
+      <div id="expand-btn-container">
+        <button class="btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target="#bottomCollapse"
+          aria-expanded="false" aria-controls="bottomCollapse">
+          What is going on with this turtle?
+        </button>
+      </div>
+
+      <!-- Expanding Card at Bottom-Right -->
+      <div class="collapse" id="bottomCollapse">
+        <div class="card card-body">
+          <h5>Turtles Are Amazing Creatures</h5>
+          <p>One of my favorite things to do is swim in Hawaii. Inevitably, a turtle will pop up, swimming right next to me. I am always amazed by these graceful swimmers. They are both modern and prehistoric at the same time.</p>
+          <p>When deciding what to feature on this page, a silent, swimming turtle just seemed appropriate. I hope you enjoy its moves.</p>
+
+          <p>One of my coworkers, Karen Eckert, is a world-renowned turtle expert. She has been saving turtles throughout the Gulf of Mexico and the Caribbean for many years. I'll try to post a link to her research.</p>
+
+          <h5>Technical Notes</h5>
+          <p>Because some have asked... This is a Three.js real-time rendered scene. No movie here—your browser is rendering this in real time. The scene has a near and far clipping plane in which the turtle swims. As different objects move in and out of the planes, they are added and removed dynamically.</p>
+          <p>The turtle moves in as realistic a simulation of swimming as I could build. As it randomly chooses a new direction, the camera tries to keep up, much like a swimmer trying to keep their eye on a passing turtle.</p>
+          <p>Does it make you want to go Maui?</p>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <footer class="copyright">
+        &copy; Brett Huffman. All rights reserved.
+      </footer>
+
     <!-- Three.js Import and Script -->
     <script type="importmap">
       {
@@ -89,6 +199,10 @@
         }
       }
     </script>
-    <script type="module" src="./js/turtle_back.js"></script>
+  <!-- Bootstrap JS (Required for Collapse) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>  
+  <script type="module" src="./js/expand.js"></script>
+  <script type="module" src="./js/form.js"></script>
+  <script type="module" src="./js/turtle_back.js"></script>
   </body>
 </html>

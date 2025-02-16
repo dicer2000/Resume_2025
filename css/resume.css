@@ -30,19 +30,88 @@
         border-radius: 10px;
     }
 
-    #card-img {
-        height: 260px;  /* Fixed height */
-        overflow: hidden; /* Prevent content overflow */
-        display: flex;
-        align-items: center; /* Center content vertically */
-        justify-content: center; /* Center content horizontally if needed */
+    .card-img {
+        width: 15rem;
+        height: 23rem;  /* Fixed height */
     }
-    .card-img-top {
-        height: 100%;
-        object-fit: cover; /* Ensures the image scales to fill the card */
-    }
+    .card-body {
+        flex-grow: 0; /* Stops the body from pushing the card height */
+        overflow: hidden; /* Hides extra content */
+      }
     
     .small_dot {
         font-size: 6px;
         vertical-align: middle;
     }
+
+/* Base styles for category content (Initially hidden) */
+.category-content {
+    max-height: 0;
+    overflow: hidden;
+/*
+    transition: max-height 0.5s ease-in-out, padding 0.3s ease-in-out;
+    */
+    padding: 0 15px;
+    background:rgba(255, 255, 255, 0.8);
+    color: #333;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: left;
+    display: block; /* Always present, just collapses */
+  }
+  
+  /* When visible, allow expansion */
+  .category-content.show {
+    max-height: 500px; /* Adjust based on expected content size */
+    padding: 15px;
+  }
+
+
+  /* Expanding Turtle Description */
+  /* Position the button at the bottom right */
+#expand-btn-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1050; /* Ensure it's above other elements */
+  }
+  
+  /* Style the expanding card */
+  #bottomCollapse {
+    position: fixed;
+    bottom: 60px; /* Slightly above the button */
+    right: 20px;
+    width: 300px; /* Adjust width as needed */
+  }
+  
+  /* Animate upward expansion */
+  #bottomCollapse.collapse:not(.show) {
+    display: block;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.4s ease-out;
+  }
+  
+  #bottomCollapse.collapsing {
+    height: auto;
+    overflow: hidden;
+  }
+  
+  #bottomCollapse.show {
+    height: auto;
+    transition: height 0.4s ease-in;
+  }
+  
+
+  .copyright {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    font-size: 14px;
+    color: #666;
+    background: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
