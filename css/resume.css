@@ -46,9 +46,9 @@
 
 /* Base styles for category content (Initially hidden) */
 .category-content {
-    max-height: 0;
-    overflow: hidden;
-/*
+    max-height: 60vh !important;
+    overflow-y: auto;
+   /*
     transition: max-height 0.5s ease-in-out, padding 0.3s ease-in-out;
     */
     padding: 0 15px;
@@ -75,6 +75,10 @@
     right: 20px;
     z-index: 1050; /* Ensure it's above other elements */
   }
+
+ .turtle-card {
+  z-index: 1000;
+ }
   
   /* Style the expanding card */
   #bottomCollapse {
@@ -115,3 +119,7 @@
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
   }
   
+  .img_large {
+    width: 20em;
+    margin-right: 20px;
+  }
